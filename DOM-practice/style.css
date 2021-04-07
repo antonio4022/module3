@@ -1,0 +1,58 @@
+    
+    .navbar>.container-fluid{
+        justify-content:space-around;
+        align-content: flex-end;
+        width: 75%;
+
+    }
+    .nav li{
+        padding: 10px 10px;
+        list-style: none;
+    }
+    
+    button:hover{
+        cursor:pointer;
+        background-color: green;
+    }
+    
+    tr:hover{
+        background-color: cadetblue;
+    }
+    table, th, td {
+    border: 1px solid black;
+   
+  }
+
+ th, td {
+    padding: 15px;
+ }
+
+ .container{
+     overflow: hidden;
+    padding: 50px 50px;
+    flex-wrap: wrap-reverse;
+
+ }
+
+ .container .col{
+     padding:10px 10px;
+     display: flex;
+     flex-wrap: wrap;
+     overflow: auto;
+ }
+ .tab1 {
+     float: right;
+ }
+
+ .tab2{
+     margin-left: 50px;
+ }
+
+ .tab2 input{
+     display:flex;
+     padding-left: 50px;
+ }
+
+ .tab2{
+
+ }
