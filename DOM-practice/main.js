@@ -8,18 +8,16 @@ document.getElementById("para-text").style.backgroundColor = "lightblue";
 
 /*------------------------problem2---------------------*/
 
+let showText = false;       // To create a toggle action onclick
 function linkLocation() {
-    document.getElementById("para-text2").href = "https://www.codecademy.com";
+    showText = !showText
     let x = document.getElementById("para-text2").href;
-    document.getElementById("location").innerHTML = x;
-
-    if (x = true) {
-        document.getElementById("location").innerHTML.remove();
+    if (showText) {
+        document.getElementById("location").textContent = x;
+    } else {
+        document.getElementById("location").textContent = '';
     }
 }
-
-
-
 
 /*----------------------problem 3-------------------*/
 
@@ -102,3 +100,15 @@ function removeSelectedRow() {
     document.getElementById("lname").value = "";
 
 }
+
+
+/*<----------------Question 4 create a list to loop through with index----------------*/
+
+function showDropdownCount() {
+    const dropdownParagraph = document.getElementById('dropdownCount');
+    const dropdownOptions = document.getElementById('dropdownOptions');
+    dropdownParagraph.textContent = dropdownOptions.options.length;
+}
+
+showDropdownCount();
+

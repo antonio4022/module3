@@ -1,13 +1,17 @@
     
-    .navbar>.container-fluid{
-        justify-content:space-around;
-        align-content: flex-end;
-        width: 75%;
+  
+    
+   .container{
+       width: 75%;
+   }
 
-    }
+
     .nav li{
         padding: 10px 10px;
         list-style: none;
+        text-decoration: none;
+        position: relative;
+        marker:none;
     }
     
     button:hover{
@@ -27,19 +31,7 @@
     padding: 15px;
  }
 
- .container{
-     overflow: hidden;
-    padding: 50px 50px;
-    flex-wrap: wrap-reverse;
 
- }
-
- .container .col{
-     padding:10px 10px;
-     display: flex;
-     flex-wrap: wrap;
-     overflow: auto;
- }
  .tab1 {
      float: right;
  }
@@ -53,6 +45,3 @@
      padding-left: 50px;
  }
 
- .tab2{
-
- }

@@ -15,94 +15,105 @@
 </head>
 
 <body>
-    <div class="header">
+    <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <ul class="container-fluid">
-                <li a="href">Home</li>
                 <li a="href">About</li>
-                <li class="nav-item dropdown">
+                <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#"
                         id="navbarDropdownMenuLink" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Dropdown link
                     </a>
-                    <ul class="dropdown-menu"
-                        aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else
-                                here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
+                </li> -->
+                <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#"
                         id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Services
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a href="#">Engage</a></li>
-                        <li><a href="#">Pontificate</a></li>
-                        <li><a href="#">Synergize</a></li>
+                    <ul class="dropdown-menu" id="nav2" onclick="listNode2"
+                        aria-labelledby="navbarDropdownmenuLink">
+                        <li><a class="dropdown-item" href="#">Engage</a></li>
+                        <li><a class="dropdown-item" href="#">Pontificate</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Synergize</a></li>
                     </ul>
-                </li>
+                </li> -->
+                <li a="href">Home</li>
             </ul>
-    </div>
-    </ul>
-    </nav>
-    </div>
-    <div class="para1">
-        <p id="para-text">Lorem ipsum dolor, sit amet consectetur adipisicing
-            elit.. Maxime
-            cupiditate labore consequatur laborum rerum libero tempora itaque
-            laudantium deleniti ullam ratione consequuntur aliquam nobis
-            incidunt
-            neque quos, eveniet quod sapiente voluptatem odio vero? Ab eligendi
-            beatae exercitationem aliquam perspiciatis soluta, ad omnis in
-            earum,
-            voluptatum nemo voluptatem obcaecati cumque debitis harum illum.
-            Corporis sequi eligendi natus illum debitis, fuga eos molestias
-            adipisci
-            facere totam repudiandae quia nihil beatae accusamus excepturi
-            officia,
-            eius eum accusantium harum dolor et! Officia harum illum adipisci
-            magni
-            sed laboriosam error est commodi molestias esse nihil expedita,
-            reiciendis provident dolorum ducimus, saepe dolores rem? Omnis,
-            doloremque!</p>
-        <p id="para-text2"><a href="https://www.codecademy.com">learn
-                Javascript</a>
-            <button onclick="linkLocation()">Location</button>
-        </p>
-        <p id="location"></p>
+        </nav>
+        <div class="para1">
+            <p id="para-text">Lorem ipsum dolor, sit amet consectetur
+                adipisicing
+                elit.. Maxime
+                cupiditate labore consequatur laborum rerum libero tempora
+                itaque
+                laudantium deleniti ullam ratione consequuntur aliquam nobis
+                incidunt
+                neque quos, eveniet quod sapiente voluptatem odio vero? Ab
+                eligendi
+                beatae exercitationem aliquam perspiciatis soluta, ad omnis in
+                earum,
+                voluptatum nemo voluptatem obcaecati cumque debitis harum illum.
+                Corporis sequi eligendi natus illum debitis, fuga eos molestias
+                adipisci
+                facere totam repudiandae quia nihil beatae accusamus excepturi
+                officia,
+                eius eum accusantium harum dolor et! Officia harum illum
+                adipisci
+                magni
+                sed laboriosam error est commodi molestias esse nihil expedita,
+                reiciendis provident dolorum ducimus, saepe dolores rem? Omnis,
+                doloremque!</p>
+            <p><a href="https://www.codecademy.com" id="para-text2">learn
+                    Javascript</a>
+                <button onclick="linkLocation()">Location</button>
+            </p>
+            <p id="location"></p>
 
-    </div>
-    <div class="container col">
-        <div class=" tab tab1">
-            <table id="table">
-                <tr>
+        </div>
+        <div class="container-2 col">
+            <div class=" tab tab1">
+                <table id="table">
+                    <tr></tr>
+                    </tr>
                     <th>First Name</th>
                     <th>Last Name</th>
-                </tr>
-                <tr>
-                    <td>Antonio</td>
-                    <td>Alford-El</td>
-                </tr>
-                <tr>
-                    <td>John</td>
-                    <td>Snow</td>
-                </tr>
+                    </tr>
+                    <tr>
+                        <td>Antonio</td>
+                        <td>Alford-El</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Snow</td>
+                    </tr>
 
-            </table>
+                </table>
+            </div>
+            <div class=" tab tab2 col">
+                First Name: <input type="text" name="fname" id="fname">
+                Last Name: <input type="text" name="lname" id="lname">
+                <button onclick="addRow();">Add Row</button>
+                <button onclick="editHtmlTableSelectedRow();">EDIT</button>
+                <button onclick="removeSelectedRow();">REMOVE</button>
+            </div>
         </div>
-        <div class=" tab tab2 col">
-            First Name: <input type="text" name="fname" id="fname">
-            Last Name: <input type="text" name="lname" id="lname">
-            <button onclick="addRow();">Add Row</button>
-            <button onclick="editHtmlTableSelectedRow();">EDIT</button>
-            <button onclick="removeSelectedRow();">REMOVE</button>
+        <div>
+            <select id='dropdownOptions'>
+                <option value="1">Action</option>
+                <option value="2">Another action</option>
+                <option value="3">Something else here</option>
+            </select>
+            <p id="dropdownCount"></p>
         </div>
+
+        <!-- <ul>
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul> -->
     </div>
     <script src="./main.js"></script>
     <script
