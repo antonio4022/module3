@@ -19,7 +19,7 @@
 // console.log(longestWord("Atlanta is a beautiful place but Massachussetts in money"));
 
 
-/*-----------2nd attempt using forEach method work--------------------*/
+/*-----------2nd attempt using forEach works--------------------*/
 
 
 // function longestWord(text) {
@@ -27,7 +27,8 @@
 //     let maxLength = 0;
 //     let result
 //     text.forEach(str => {
-//         if (str.length > maxLength) {
+//         if (str.length > maxLength) {   
+//forEach list the elements in the array so[i]not necessary
 //             maxLength = str.length
 //             result = str
 //         }
@@ -101,9 +102,10 @@ function findLongestWord(text) {
 
 
 // function vowelCount(str) {
-//     str = str.split('')
-//     console.log(str)
+//     str = str.split('')  // split turns this string into an array
+//  
 //     let newStr = str.filter(letter => myVowels.includes(letter));
+             //filter creates a new array. letter becomes the element in newStr that gets looped over.
 //     return newStr.length;
 
 // }
