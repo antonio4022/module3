@@ -1,3 +1,7 @@
+
+
+/*-----This is my attempt to use the return statement that doesn't work*/
+
 // function newbuzz(Arr) {
 
 
@@ -14,22 +18,22 @@
 
 // }
 
-function numOrFizz(arr) {
+// function numOrFizz(arr) {
 
-    for (let i = 1; i <= 100; i += 1) {
-        if (i % 3 == 00 && i % 5 == 0) {
-            return fizzbuzz;
-        } else if (i % 5 == 0) {
-            return buzz;
-        } else if (i % 3 == 0) {
-            return fizz;
-        } else
-            return arr[i];
-    }
-}
+//     for (let i = 1; i <= 100; i += 1) {
+//         if (i % 3 == 00 && i % 5 == 0) {
+//             return fizzbuzz;
+//         } else if (i % 5 == 0) {
+//             return buzz;
+//         } else if (i % 3 == 0) {
+//             return fizz;
+//         } else
+//             return arr[i];
+//     }
+// }
 
 
-console.log(numOrFizz('one'));
+// console.log(numOrFizz('one'));
 
 
 
@@ -37,12 +41,24 @@ console.log(numOrFizz('one'));
 
 /* ----My original fizzbuzz ---------------- answer-----------*/
 
-// for (let i = 1; i <= 100; i+= 1){     // This i+= 1 is not the same as i++.
-//     if (i % 3 == 00 && i % 5 == 0){
-//       console.log("fizzbuzz");
-//     } else if (i % 5 == 0){
-//       console.log("buzz");
+// for (let i = 1; i <= 100; i += 1) {     // This i+= 1 is not the same as i++.
+//     if (i % 3 == 00 && i % 5 == 0) {
+//         console.log("fizzbuzz");
+//     } else if (i % 5 == 0) {
+//         console.log("buzz");
 //     } else if (i % 3 == 0) {
-//       console.log("fizz");
+//         console.log("fizz");
 //     } else
-//       console.log (i);
+//         console.log(i);
+// }
+/*--------------I changed only the i += 1 to i++---*/
+for (let i = 1; i <= 100; i++) {     // This i+= 1 is not the same as i++.
+    if (i % 3 == 00 && i % 5 == 0) {
+        console.log("fizzbuzz");
+    } else if (i % 5 == 0) {
+        console.log("buzz");
+    } else if (i % 3 == 0) {
+        console.log("fizz");
+    } else
+        console.log(i);
+}
