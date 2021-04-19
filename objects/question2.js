@@ -45,7 +45,7 @@ var txt = "";
 
 var x;
 for (x in persons) {
-    txt += persons[x] + " ";
+    txt += persons[x] + ", ";
 
 }
 console.log(txt);
