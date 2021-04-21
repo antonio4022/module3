@@ -17,8 +17,8 @@ let myBooks = [
 
 // })
 
-function organizeBooks(arr, organizeBy) {
-    const bye = organizeBy.toLowerCase()
+function organizeBooks(obj, key) {
+    const bye = key.toLowerCase()
     arr.sort(function (a, b) {
 
         if (a.bye > b.bye)
