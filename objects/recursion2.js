@@ -13,14 +13,12 @@ step 4 return a sum*/
 let weeklyScore = [22, 3, 8, 2];
 
 
-
-function sum(arr) {
-    let s = 0;
-    for (let i = 0; i < arr.length; i++) {
-        s = s + arr[i];
+let sum = function (arr) {
+    if (arr.length < 1) {
+        return 0;
+    } else {
+        return arr.pop() + sum(arr);
     }
-    return s;
-
 }
 
 console.log(sum(weeklyScore));
