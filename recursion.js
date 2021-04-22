@@ -16,3 +16,5 @@ function findFractal(nums) {
 }
 
 console.log(findFractal(5));
+
+
