@@ -8,27 +8,19 @@ let myBooks = [
     { author: 'Cronin E.D.', title: 'Black Moses(The story of Garvey and the UNIA)', LibraryID: 56974 }
 ]
 
-// arr.sort(function (a, b) {
-//     if (a.title.toLowerCase() < b.title.toLowerCase())
-//         return -1
-//     if (a.title.toLowerCase() > b.title.toLowerCase())
-//         return 1;
-//     return 0;
 
-// })
 
-function organizeBooks(obj, key) {
-    const bye = key.toLowerCase()
-    arr.sort(function (a, b) {
 
-        if (a.bye > b.bye)
-            return 1;
+myBooks.sort(function (a, b) {
 
-        if (a.by < b.by)
-            return -1;
-        return 0;
-    })
-}
-let printMe = organizeBooks(myBooks, title)
-console.log(printMe);
+    if (a.title.toLowerCase() > b.title.toLowerCase())
+        return 1;
+
+    if (a.title.toLowerCase() < b.title.toLowerCase())
+        return -1;
+    return 0;
+})
+
+console.log(myBooks);
+
 
